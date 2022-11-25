@@ -23,6 +23,6 @@ app.post('/api/v1/shorten', shortenerRoute);
 app.get('/:shortCode', getUrl)
 
 
-app.listen(3000, () => {
+app.listen(env.PORT || 3000, () => {
   console.log('Server is running...')
 });
